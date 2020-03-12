@@ -1,0 +1,19 @@
+{
+  "name": "is-it-safe-to",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theonlyjohnny/is-it-safe-to.git"
+  },
+  "author": "Johnny Dallas <theonlyjohnny@theonlyjohnny.sh>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theonlyjohnny/is-it-safe-to/issues"
+  },
+  "homepage": "https://github.com/theonlyjohnny/is-it-safe-to#readme"
+}
