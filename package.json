@@ -2,9 +2,10 @@
   "name": "is-it-safe-to",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/theonlyjohnny/is-it-safe-to/issues"
   },
-  "homepage": "https://github.com/theonlyjohnny/is-it-safe-to#readme"
+  "homepage": "https://github.com/theonlyjohnny/is-it-safe-to#readme",
+  "dependencies": {
+    "next": "^9.3.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  }
 }
