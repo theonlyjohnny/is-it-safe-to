@@ -1,3 +1,6 @@
+import * as React from "react";
+import Head from "next/head";
+
 function No(title, sentence) {
   return (
     <div

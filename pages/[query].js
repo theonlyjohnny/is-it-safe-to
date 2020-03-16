@@ -1,4 +1,4 @@
-import Head from "next/head";
+import * as React from "react";
 import { useRouter } from "next/router";
 import transformTitle from "title";
 
@@ -6,11 +6,9 @@ import No from "../components/No";
 import Yes from "../components/Yes";
 
 const overrides = {
-  "test_yes": true,
-  "test_no": false
+  test_yes: true,
+  test_no: false
 };
-
-const yesChoices = ["Sure", "Always", "I guess", "Barely"];
 
 const asPathToQuery = asPath => asPath.replace(/[^\w\s]/gi, " ").trim();
 function QueryPage() {
