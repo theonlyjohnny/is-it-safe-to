@@ -1,7 +1,7 @@
 import * as React from "react";
 import Head from "next/head";
 
-function Yes(title, sentence) {
+function Custom(title, sentence, { message, url }) {
   return (
     <div
       style={{
@@ -18,9 +18,18 @@ function Yes(title, sentence) {
         <meta name="description" content={sentence}></meta>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <h1 style={{ margin: "auto" }}>Yes</h1>
+      <h1 style={{ margin: "auto" }}>
+        {
+          url ?
+          (<a href={url}>
+            {message}
+          </a>)
+          :
+          message
+        }
+      </h1>
     </div>
   );
 }
 
-export default Yes;
+export default Custom;
