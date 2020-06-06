@@ -3,11 +3,13 @@ import { useRouter } from "next/router";
 import transformTitle from "title";
 
 import No from "../components/No";
-import Yes from "../components/Yes";
+import Custom from "../components/Custom";
 
 const overrides = {
-  test_yes: true,
-  test_no: false
+  "leave": {
+    message: "Not really...",
+    url: "https://www.theatlantic.com/family/archive/2020/03/coronavirus-what-does-social-distancing-mean/607927/"
+  }
 };
 
 const asPathToQuery = asPath => asPath.replace(/[^\w\s]/gi, " ").trim();
@@ -18,7 +20,8 @@ function QueryPage() {
   const title = React.useMemo(() => transformTitle(sentence), [sentence]);
 
   if (overrides[query]) {
-    return Yes(title, sentence);
+    console.log("override", overrides[query]);
+    return Custom(title, sentence, overrides[query]);
   }
 
   return No(title, sentence);
