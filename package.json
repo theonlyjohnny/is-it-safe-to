@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/theonlyjohnny/is-it-safe-to#readme",
   "dependencies": {
-    "next": "^9.3.0",
+    "next": "^9.3.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "title": "^3.4.1"
