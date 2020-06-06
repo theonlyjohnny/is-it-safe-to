@@ -18,7 +18,7 @@ function Yes(title, sentence) {
         <meta name="description" content={sentence}></meta>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <h1 style={{ margin: "auto" }}>Yes</h1>
+      <h1 style={{ margin: "auto" }}>NO</h1>
     </div>
   );
 }
